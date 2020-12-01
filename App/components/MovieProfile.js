@@ -98,14 +98,14 @@ const MovieProfile = ({ route }) => {
           </TouchableOpacity>
         </View>
       </View>
-      <ScrollView>
+      <ScrollView style={{ width: 400 }}>
         { getCommentLoading && 
          <Text style={{ color: 'white' }}>로딩중입니다.</Text>
         }
         { commentInfo ?
           commentInfo.map((v, i) =>
           (
-            <View>
+            <View style={{ flex: 1 }}>
               <Text style={styles.commentUser} >{v.userid}</Text>
               <Text key={i} style={styles.comment} >{v.content}</Text>
             </View>
@@ -198,7 +198,6 @@ const styles = StyleSheet.create({
     color: 'white',
   },
   comment: {
-    marginRight: 350,
     color: '#a9a9a9',
     marginBottom: 5,
   }

@@ -27,6 +27,10 @@ function Home({ navigation }) {
     });
   }, []);
 
+  const keyGenerator = () => {
+    return Math.floor(Math.random() * 90000) + 1000;
+  }
+
   const getMorePage = useCallback(
     (e) => {
       if (
@@ -69,7 +73,7 @@ function Home({ navigation }) {
             navigation={navigation}
             poster={movie.medium_cover_image}
             largePoster={movie.large_cover_image}
-            key={movie.id}
+            key={keyGenerator()}
             id={movie.id}
             title={movie.title}
             summary={movie.summary}
