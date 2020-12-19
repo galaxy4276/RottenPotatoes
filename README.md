@@ -16,7 +16,7 @@
 * 댓글 요청, 작성 기능
 
 ### 😊 팀원 😊
-* 정지용 ( wscrg ): Presentaitinoal Component 개발과 어플리케이션 Navigation Router 구현
+* 정지용 ( wscrg ): Presentaitinoal Component 개발과 어플리케이션 Navigation Router 구현, Redux 상태 관리
 * 최은기 ( galaxy4276 ): Redux 상태 관리와 API 요청. 그에 대응하는 백엔드 API 서버 로직 처리와 응답 구현, DB 서버와 AWS 배포환경을 구축
 
 # 배포
